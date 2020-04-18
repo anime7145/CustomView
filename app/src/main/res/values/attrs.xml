@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomButton">
+        <attr name="setText" format="string"/>
+        <attr name="setBackgroundColor" format="color"/>
+        <attr name="setTextColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="CustomRadioButton">
+        <attr name="setRadioText" format="string"/>
+        <attr name="setRadioTextColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="CustomCheckBox">
+        <attr name="setCheckboxText" format="string"/>
+        <attr name="setCheckboxTextColor" format="color"/>
+    </declare-styleable>
+</resources>

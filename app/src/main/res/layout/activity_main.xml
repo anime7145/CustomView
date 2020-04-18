@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select an Operating System"
+        android:layout_marginBottom="20dp"
+        android:textSize="26sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <com.example.customview.CustomRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:setRadioText=" Windows"
+            app:setRadioTextColor="#000"
+            android:backgroundTint="@color/colorAccent"
+            android:id="@+id/windows"
+            android:checked="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            />
+        <com.example.customview.CustomRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:setRadioText=" Linux"
+            app:setRadioTextColor="#000"
+            android:backgroundTint="@color/colorAccent"
+            android:id="@+id/linux"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            />
+        <com.example.customview.CustomRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:setRadioText=" Mac Os"
+            app:setRadioTextColor="#000"
+            android:backgroundTint="@color/colorAccent"
+            android:id="@+id/mac"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Like Your Favourite Languages"
+        android:layout_marginBottom="20dp"
+        android:textSize="26sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <com.example.customview.CustomCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:setCheckboxText="  C"
+        app:setCheckboxTextColor="#000000"
+        android:id="@+id/checkbox_c"
+        android:layout_marginBottom="10dp"/>
+    <com.example.customview.CustomCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:setCheckboxText="  C++"
+        app:setCheckboxTextColor="#000000"
+        android:id="@+id/checkbox_cpp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.example.customview.CustomCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:setCheckboxText="  Java"
+        app:setCheckboxTextColor="#000000"
+        android:id="@+id/checkbox_java"
+        android:layout_marginBottom="10dp"/>
+    <com.example.customview.CustomCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:setCheckboxText="  Python"
+        app:setCheckboxTextColor="#000000"
+        android:id="@+id/checkbox_python"/>
+
+
+    <com.example.customview.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:setBackgroundColor="@color/colorPrimaryDark"
+        app:setText="Submit"
+        app:setTextColor="#FFFFFF"
+        android:id="@+id/send_btn"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operating System: "
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/os"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Languages: "
+        android:id="@+id/lang"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+</LinearLayout>
